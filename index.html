@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VERSA</title>
+    <link rel="shortcut icon" type="image/jpg" href="" />
+
+
+    <!-- Local  -->
+    <link id="masterStyle" rel="stylesheet" href="/css/main.css" type="text/css">
+
+    <!-- QA  -->
+    <!-- <link id="masterStyle" rel="stylesheet" href="https://basrus.co.za/mock/VURSA/css/main.css" type="text/css"> -->
+
+
+    <!-- Font import -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Preload HTML Div -->
+    <div id="preDiv" class="hide"></div>
+
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <!-- Success Notification Banner -->
+    <div class="notify">
+        <div id="alertBanner"></div>
+    </div>
+    <!-- Information & Error Pop-up -->
+    <div class="popupBox">
+        <div id="popupBox" class="hide"></div>
+    </div>
+    <!-- Custom pop-up -->
+    <div id="custardBox" class="hide">
+        <div class="overlay">
+            <div id="custardContainer">
+                <svg onclick="hide('custardBox')" class="x" xmlns="http://www.w3.org/2000/svg" width="13.58"
+                    height="13.58" viewBox="0 0 13.58 13.58">
+                    <polygon class="a"
+                        points="12.53 13.53 13.58 12.47 7.84 6.78 13.53 1.05 12.47 0 6.79 5.74 1.05 0.06 0 1.1 5.74 6.79 0.05 12.53 1.1 13.58 6.8 7.84 12.53 13.53" />
+                </svg>
+                <div id="custardContent">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === Hidden Inputs === -->
+    <input type="hidden" id="defaultLoggedInHomepage">
+    <input type="hidden" id="cookedAcceptedYN">
+    <!-- ======================================================================= -->
+
+    <div class="body" id="primaryContainer">
+
+
+    </div>
+
+    <!-- ======================================================================= -->
+
+    <!-- local -->
+    <script src="../js/config.js"></script>
+    <script src="../js/core.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/candi.js"></script>
+
+    <!-- QA -->
+    <!-- <script src="https://basrus.co.za/mock/VURSA/js/config.js"></script>
+    <script src="https://basrus.co.za/mock/VURSA/js/core.js"></script>
+    <script src="https://basrus.co.za/mock/VURSA/js/candi.js"></script>-->
+
+</body>
+
+</html>

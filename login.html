@@ -1,0 +1,97 @@
+<div id="loginGrid" class="loginGrid">
+
+
+  <img id="coverImg" src="" alt="background image">
+
+  <div class="loginContent">
+
+    <div id="loginLogos">
+      <img id="logo" src="" class="loginImg" alt="Company logo" style="margin: 1rem 0 2rem 0;">
+    </div>
+
+    <!-- This is a test  -->
+    <!-- LOGIN -->
+    <div class="loginHeading">
+
+      <div id="loginDiv">
+        <!-- <h1 class="">Login</h1> -->
+        <p class="sectionGap">Enter your email and password to log in to your
+          account.</p>
+
+        <div class="loginInputs">
+
+          <div class="inpDiv marginBottom" id="email">
+            <label for="l_username">Email/Username</label>
+            <input type="text" id="l_username" required placeholder="Email/Username">
+            <!-- <i><img src="img/icons/icons_email.svg"></i> -->
+
+          </div>
+
+          <div class="inpDiv" style="margin-bottom: 23px;">
+            <label for="l_password">Password</label>
+            <input type="password" id="l_password" required oninput="removeIncorrect(this.id), capsLock(this.id)"
+              onClick="this.select();" onkeyup="javascript: if(event.keyCode === 13) authLogin()"
+              onblur="hide('capsLock')" placeholder="Password">
+
+
+            <!-- hide/show password -->
+            <svg id="eye" class="viewPass" onclick="viewPass('l_password', this.id)" xmlns="http://www.w3.org/2000/svg"
+              width="25.7" height="15.32" viewBox="0 0 25.7 15.32">
+              <path
+                d="M25.5,7.06C22.22,2.69,17.77,0,12.86,0S3.49,2.69.2,7.05a1.05,1.05,0,0,0,0,1.22c3.29,4.37,7.74,7.05,12.66,7.05s9.36-2.68,12.64-7A1,1,0,0,0,25.5,7.06ZM18.25,8a5.4,5.4,0,1,1,0-.7A4.09,4.09,0,0,1,18.25,8Z"
+                transform="translate(0 0)" />
+              <path
+                d="M12.67,4.76A2.91,2.91,0,1,0,13,10.57h0a2.92,2.92,0,0,0,2.72-2.72,2.28,2.28,0,0,0,0-.37A2.9,2.9,0,0,0,12.67,4.76Z"
+                transform="translate(0 0)" /></svg>
+
+            <!-- Caps -->
+            <div id="capsLock" class="hide">
+              <h6 class="log_Mkr6">Caps lock is on</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- forgotpass-->
+      <div id="forgotPassDiv" class="hide">
+
+        <h1 class="log_Mkr14">Forgot Password</h1>
+        <p class="log_Mkr7">Enter your email and we’ll send you your new password.</p>
+
+
+        <div class="loginInputs">
+          <div class="group " id="email">
+            <input type="text" id="f_username" onkeyup="eAddressVal(this.id)" required">
+            <span class="bar" style="width: 100%;"></span>
+            <p id="f_username_FB" class="inpFB hide"></p>
+            <label for="f_username" class="log_Mkr10">Email address</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LOGIN BUTTON -->
+    <button id="loginBtn" class="btn login" type="button" name="button" onclick="authLogin()">
+      <span id="loadingText" class="btnText log_Mkr13">Login</span>
+    </button>
+
+
+    <!-- SUPPORT & FORGOT -->
+    <div id="supportDiv">
+      <a class="loginHelp" onclick="login.forgotPass()" style="cursor: pointer;" class="forgotPassword"><span
+          class="log_Mkr2"> Forgot
+          Password</span></a>
+    </div>
+
+    <div id="backToLoginDiv" class="hide">
+      <a class="loginHelp" onclick="login.backToLogin()" style="cursor: pointer;" class="forgotPassword log_Mkr8">
+        &#8592 Back to
+        Login</a>
+    </div>
+
+
+  </div>
+
+</div>
